@@ -1,0 +1,59 @@
+appId: com.wehbs.ReadyForPickup.ios
+name: Create persist pause edit and delete a watch
+---
+- launchApp:
+    clearState: true
+    arguments:
+      --ui-testing: true
+- startRecording: watch-lifecycle
+- assertVisible: "Your next find starts here"
+- tapOn:
+    id: create-first-watch
+- assertVisible: "New watch"
+- tapOn:
+    id: store-picker
+- tapOn: "Store name or city"
+- inputText: "Fifth Avenue"
+- tapOn:
+    id: store-R095
+- tapOn:
+    id: configuration-picker
+- assertVisible: "Configurations"
+- takeScreenshot: configuration-picker
+- tapOn:
+    id: BackButton
+- tapOn:
+    id: save-watch
+- assertVisible: ".*Fifth Avenue.*"
+- takeScreenshot: saved-watch
+- stopApp
+- launchApp:
+    arguments:
+      --ui-testing: true
+- assertVisible: ".*Fifth Avenue.*"
+- tapOn: "Ready to check.*"
+- assertVisible: "Check availability"
+- tapOn:
+    id: watch-menu
+- tapOn: "Pause watch"
+- assertVisible: "This watch is paused"
+- takeScreenshot: paused-watch
+- tapOn:
+    id: watch-menu
+- tapOn: "Edit watch"
+- assertVisible: "Edit watch"
+- tapOn:
+    text: "1"
+    childOf:
+      id: include-nearby-toggle
+- takeScreenshot: edited-watch-options
+- tapOn:
+    id: save-watch
+- assertVisible: ".*This store only.*"
+- tapOn:
+    id: watch-menu
+- tapOn: "Delete watch"
+- tapOn: "Delete watch"
+- assertVisible: "Your next find starts here"
+- takeScreenshot: empty-watches
+- stopRecording

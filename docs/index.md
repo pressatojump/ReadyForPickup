@@ -1,0 +1,29 @@
+# ReadyForPickup
+
+ReadyForPickup is a macOS app that watches Apple Store pickup availability for iPhone and Mac and alerts you when your configuration is ready nearby.
+
+<p class="download">
+  <a class="download-button" href="https://github.com/pressatojump/ReadyForPickup/releases/latest/download/ReadyForPickup.dmg">
+    <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M10 3v10m-4.5-4.5L10 13l4.5-4.5M4 17h12"/></svg>
+    Download for Mac
+  </a>
+</p>
+
+Earlier versions and release notes are on the [Releases page](https://github.com/pressatojump/ReadyForPickup/releases).
+
+![ReadyForPickup watching iPhone 18 Pro pickup at Apple Fifth Avenue and nearby New York stores, with two models marked as preferred](screenshot.png)
+
+## What it does
+
+- Watches Apple Store pickup stock for current iPhones and Macs in 15 countries: the US, Australia, Austria, Canada, China mainland, France, Germany, India, Italy, Japan, Malaysia, South Korea, Spain, the United Arab Emirates and the UK
+- Multiple saved searches, each with its own country, store and preferred models
+- Alerts on this Mac, and optional Pushover phone notifications (bring your own Pushover app token)
+- Auto-refresh with throttle backoff
+
+## Source
+
+Source code: [github.com/pressatojump/ReadyForPickup](https://github.com/pressatojump/ReadyForPickup)
+
+## License
+
+Licensed under GPL-3.0 — see [LICENSE.md](https://github.com/pressatojump/ReadyForPickup/blob/main/LICENSE.md).

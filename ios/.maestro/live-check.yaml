@@ -1,0 +1,28 @@
+appId: com.wehbs.ReadyForPickup.ios
+name: Check real Apple pickup availability
+---
+- launchApp:
+    clearState: true
+    arguments:
+      --ui-testing: true
+- startRecording: live-apple-check
+- tapOn:
+    id: create-first-watch
+- tapOn:
+    id: store-picker
+- tapOn: "Store name or city"
+- inputText: "Fifth Avenue"
+- tapOn:
+    id: store-R095
+- tapOn:
+    id: save-watch
+- tapOn: "Ready to check.*"
+- tapOn:
+    id: check-availability
+- extendedWaitUntil:
+    visible: "STORE AVAILABILITY"
+    timeout: 45000
+- assertNotVisible: "Couldn’t update availability"
+- assertNotVisible: ".*Sample results.*"
+- takeScreenshot: live-apple-results
+- stopRecording

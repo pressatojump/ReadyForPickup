@@ -1,0 +1,24 @@
+appId: com.wehbs.ReadyForPickup.ios
+name: Browse sample availability
+---
+- launchApp:
+    clearState: true
+    arguments:
+      --demo: true
+- startRecording: demo-walkthrough
+- assertVisible:
+    id: demo-banner
+- assertVisible: "The right pick.*"
+- takeScreenshot: demo-watches
+- tapOn: "Available at 1 store.*"
+- assertVisible: "Sample results.*"
+- assertVisible: "View at Apple"
+- takeScreenshot: demo-availability
+- back
+- tapOn: Activity
+- assertVisible: "Demo activity.*"
+- takeScreenshot: demo-activity
+- tapOn: Settings
+- assertVisible: "Automatic checks"
+- takeScreenshot: demo-settings
+- stopRecording

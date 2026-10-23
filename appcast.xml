@@ -1,0 +1,30 @@
+<?xml version="1.0" standalone="yes"?>
+<rss xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle" version="2.0">
+    <channel>
+        <title>ReadyForPickup</title>
+        <item>
+            <title>0.3.8</title>
+            <pubDate>Thu, 22 Oct 2026 15:02:48 -0400</pubDate>
+            <sparkle:version>0.3.8</sparkle:version>
+            <sparkle:shortVersionString>0.3.8</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion>
+            <enclosure url="https://github.com/pressatojump/ReadyForPickup/releases/download/v0.3.8/ReadyForPickup-0.3.8.dmg" length="2616717" type="application/octet-stream" sparkle:edSignature="tkN+wJ/EAmSuFA+KOeVcuNQlBZVOsFBXn97/QRF1zB+N34a70wrpBzC/1tgA3WGcmnyunxVvYzSjRKPoS+xtCw=="/>
+        </item>
+        <item>
+            <title>0.3.7</title>
+            <pubDate>Wed, 21 Oct 2026 11:26:16 -0400</pubDate>
+            <sparkle:version>0.3.7</sparkle:version>
+            <sparkle:shortVersionString>0.3.7</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion>
+            <enclosure url="https://github.com/pressatojump/ReadyForPickup/releases/download/v0.3.7/ReadyForPickup-0.3.7.dmg" length="2595725" type="application/octet-stream" sparkle:edSignature="40M5bqYL0uR7N6FxI5pQHloWvnDf44pKWt+RbTDYWhQGUiBizsH5oUwniWxun9uKV0aWxcIHw4c+py3BQKuJAA=="/>
+        </item>
+        <item>
+            <title>0.3.6</title>
+            <pubDate>Wed, 21 Oct 2026 00:15:47 -0400</pubDate>
+            <sparkle:version>0.3.6</sparkle:version>
+            <sparkle:shortVersionString>0.3.6</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion>
+            <enclosure url="https://github.com/pressatojump/ReadyForPickup/releases/download/v0.3.6/ReadyForPickup-0.3.6.dmg" length="2523021" type="application/octet-stream" sparkle:edSignature="SBPGsTfxs6jn77Jh9KvJABkCZZLTNiG1HNsYw1YLwraRJYPtukW5JWSxE/lAMdAJiPC/cz+xAVxn75P2v3X+Dg=="/>
+        </item>
+    </channel>
+</rss>
